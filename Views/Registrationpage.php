@@ -1,5 +1,5 @@
 <html>
-    <!-- Rakibul Kabir Khan -->
+    <!--Registration Page -->
     <head>
         <title>Registration Page</title>
         <style>
