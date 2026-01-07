@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    //Indoor_Games_playing_slot_css
 <style>
 header{
     position: relative;
