@@ -1,5 +1,5 @@
 <html>
-    <!-- Rakibul Kabir Khan -->
+    <!--Passwordreset Page-->
     <head>
         <title>Password Reset Page</title>
         <style>
