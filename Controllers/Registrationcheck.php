@@ -1,5 +1,5 @@
 <?php
-    //Rakibul Kabir Khan Registrationcheck Page
+    //Registrationcheck Page
     session_start();
     require_once('../Models/LoginandregistrationModel.php');
     if(isset($_POST['submit'])){
