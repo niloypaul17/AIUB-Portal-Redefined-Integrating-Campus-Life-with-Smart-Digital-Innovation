@@ -1,5 +1,5 @@
 <?php
-//Rakibul Kabir Khan
+//ClubapplyModel Page
 require_once('Database.php');
 
 function Clubapply($clubapplication){
