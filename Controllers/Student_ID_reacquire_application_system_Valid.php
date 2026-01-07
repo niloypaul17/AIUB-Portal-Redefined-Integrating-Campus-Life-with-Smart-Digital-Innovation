@@ -1,4 +1,6 @@
 <?php
+//Student_ID_reacquire_application_system_Valid
+
 require_once("Authenticationcheck.php");
 require_once("../Models/Student_ID_reacquire_application_system_check.php");
 
