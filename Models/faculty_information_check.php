@@ -1,5 +1,4 @@
 <?php
-//faculty_information_check
 require_once('Database.php');
 
 function facultycheck($faculty){
