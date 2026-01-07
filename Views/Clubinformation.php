@@ -1,5 +1,5 @@
 <?php
-//Rakibul Kabir Khan
+//Clubinformation Page
    require_once('../Controllers/Authenticationcheck.php');
 ?>
 
