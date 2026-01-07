@@ -1,5 +1,5 @@
 <?php
-//Rakibul Kabir Khan
+//Loginpage Page
     session_start();
 ?>
 
