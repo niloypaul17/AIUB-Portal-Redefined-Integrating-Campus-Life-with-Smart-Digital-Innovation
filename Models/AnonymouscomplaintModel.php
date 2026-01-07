@@ -1,5 +1,5 @@
 <?php
-//Rakibul Kabir Khan
+//AnonymouscomplaintModel Page
 require_once('Database.php');
 
 function submitcomplaint($complaintandadvice){
