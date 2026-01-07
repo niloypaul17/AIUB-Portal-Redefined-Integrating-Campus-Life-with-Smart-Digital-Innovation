@@ -1,4 +1,5 @@
 <?php
+    //Rakibul Kabir Khan
     session_start();
     require_once('../Models/ClubapplyModel.php');
     if(isset($_POST['submit'])){

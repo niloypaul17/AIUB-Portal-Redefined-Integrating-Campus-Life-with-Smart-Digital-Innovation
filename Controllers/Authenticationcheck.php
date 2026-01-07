@@ -1,6 +1,7 @@
 <?php
+    //Rakibul Kabir Khan
     session_start();
-    /*if(isset($_COOKIE['status']) !== true){
+    if(isset($_COOKIE['status']) !== true){
         header('location: ../Controllers/Logincheck.php');
-    }*/
+    }
 ?>

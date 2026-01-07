@@ -1,4 +1,5 @@
 <?php
+//Rakibul Kabir Khan
    require_once('../Controllers/Authenticationcheck.php');
 ?>
 
@@ -54,11 +55,11 @@
         <a href="#">File sharing</a> 
         <a href="#">Events</a> 
         <a href="#">Map</a> 
-        <a href="Faculty_Information_html.php">Faculty</a>
-        <a href="Class_Routine_and_Upcoming_Registration_Course_Generator_html.php">Class Routine</a>
-        <a href="Course_Book_Reference_and_Online_Resources_html.php">Book Reference</a>
-        <a href="Indoor_Games_playing_slot_html.php">Indoor Games</a>
-        <a href="Student_ID_reacquire_application_system_html.php">Student ID Reacqrire</a>      
+        <a href="#">Faculty</a>
+        <a href="#">Class Routine</a>
+        <a href="#">Book Reference</a>
+        <a href="#">Indoor Games</a>
+        <a href="#">Student ID Reacqrire</a>      
     </nav>
 
     <h2><b>Introdcution: </b></h2>
