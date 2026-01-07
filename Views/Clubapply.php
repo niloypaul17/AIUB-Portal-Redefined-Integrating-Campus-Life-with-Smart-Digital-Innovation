@@ -1,5 +1,5 @@
 <?php
-//Rakibul Kabir Khan
+//Clubapply Page
    require_once('../Controllers/Authenticationcheck.php');
 ?>
 
