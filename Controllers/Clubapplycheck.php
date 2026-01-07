@@ -1,5 +1,5 @@
 <?php
-    //Rakibul Kabir Khan
+    //Rakibul Kabir Khan Clubapplycheck Page
     session_start();
     require_once('../Models/ClubapplyModel.php');
     if(isset($_POST['submit'])){
