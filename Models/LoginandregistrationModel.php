@@ -1,5 +1,5 @@
 <?php
-//Rakibul Kabir Khan
+//LoginandregistrationModel Page
 require_once('Database.php');
 
 function login($user){
