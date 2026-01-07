@@ -1,5 +1,4 @@
 <?php
-//class_routine_and_course_generator_check
 require_once('Database.php');
 
 function classcheck($class){
