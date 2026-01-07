@@ -1,4 +1,5 @@
 <?php
+//Student_ID_reacquire_application_system_check
 require_once('Database.php');
 
 function studentcheck($student){
