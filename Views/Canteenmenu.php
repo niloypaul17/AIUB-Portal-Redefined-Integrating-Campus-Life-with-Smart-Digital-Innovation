@@ -30,7 +30,7 @@
 </head>
 <body id="top">
 <header>
-    <img src="AIUB Logo.png" alt="University Logo">
+    <img src="../Assests/AIUB_Logo.png" alt="University Logo">
     <h1>AIUB University Canteen</h1>
     <h3>Healthy Foods for AIUB students</h3>
     <nav>
@@ -55,14 +55,14 @@
                 <article>
                     <strong>Sandwich</strong> - Bread sandwich with vegetables and egg.<br>
                     Price: 60 BDT<br>
-                    <img src="Sandwich.png" alt="Sandwich">
+                    <img src="../Assests/Sandwich.png" alt="Sandwich">
                 </article>
             </li>
             <li>
                 <article>
                     <strong>Shawarma</strong> - Delicious Meat Wrapped In Shawarma Bread<br>
                     Price: 80 BDT<br>
-                    <img src="Shawarma.png" alt="Shawarma">
+                    <img src="../Assests/Shawarma.png" alt="Shawarma">
                 </article>
             </li>
         </ul>
@@ -76,14 +76,14 @@
                 <article>
                     <strong>Egg Fried Rice</strong> - Delicious Fried Rice With Egg<br>
                     Price: 120 BDT<br>
-                    <img src="Fried Rice.png" alt="Chicken Rice">
+                    <img src="../Assests/Fried_Rice.png" alt="Chicken Rice">
                 </article>
             </li>
             <li>
                 <article>
                     <strong>Beef Khichuri</strong> - Traditional khichuri with beef curry.<br>
                     Price: 180 BDT<br>
-                    <img src="Beef Khichuri.png" alt="Beef Khichuri">
+                    <img src="../Assests/Beef_Khichuri.png" alt="Beef Khichuri">
                 </article>
             </li>
         </ul>
@@ -97,14 +97,14 @@
                 <article>
                     <strong>Samosa</strong> - Crispy fried samosa.<br>
                     Price: 20 BDT<br>
-                    <img src="Samosa.png" alt="Samosa">
+                    <img src="../Assests/Samosa.png" alt="Samosa">
                 </article>
             </li>
             <li>
                 <article>
                     <strong>French Fries</strong> - Crispy potato fries.<br>
                     Price: 60 BDT<br>
-                    <img src="French Fries.png" alt="French Fries">
+                    <img src="../Assests/French_Fries.png" alt="French Fries">
                 </article>
             </li>
         </ul>
@@ -118,14 +118,14 @@
                 <article>
                     <strong>Tea</strong> - Hot milk tea.<br>
                     Price: 15 BDT<br>
-                    <img src="Tea.png" alt="Tea">
+                    <img src="../Assests/Tea.png" alt="Tea">
                 </article>
             </li>
             <li>
                 <article>
                     <strong>Coffee</strong> - Coffee with milk.<br>
                     Price: 30 BDT<br>
-                    <img src="Hot Coffee.png" alt="Hot Coffee">
+                    <img src="../Assests/Hot_Coffee.png" alt="Hot Coffee">
                 </article>
             </li>
         </ul>
