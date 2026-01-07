@@ -1,5 +1,5 @@
 <?php
-    //Rakibul Kabir Khan Passwordresetcheck Page
+    //Passwordresetcheck Page
     session_start();
     require_once('../Models/LoginandregistrationModel.php');
     if(isset($_POST['submit'])){
