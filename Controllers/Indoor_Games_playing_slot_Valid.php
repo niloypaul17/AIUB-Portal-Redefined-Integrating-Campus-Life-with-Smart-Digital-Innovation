@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $gamename=$_POST["S1"];
     $time=$_POST["S2"];
     
-    if($game=="" && $time==""){
+    if($gamename=="" && $time==""){
         $massage="Fill every box";
     }
     else{

@@ -35,7 +35,7 @@ require_once("../Controllers/Student_ID_reacquire_application_system_Valid.php")
                 <input type="text" name="department" id="I1">
             </div>
             <div class="div">
-                Date of pick up:
+                Date of ID Card lost:
                 <input type="date" name="date" id="I2">
             </div>
             <input type="submit" id="IB1">
