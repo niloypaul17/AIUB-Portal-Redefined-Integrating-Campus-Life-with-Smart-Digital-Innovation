@@ -1,4 +1,5 @@
 <?php
+//Indoor_Games_playing_slot_check
 require_once('Database.php');
 
 function gamecheck($game){
