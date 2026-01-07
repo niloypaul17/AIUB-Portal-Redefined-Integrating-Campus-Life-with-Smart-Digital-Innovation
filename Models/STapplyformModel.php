@@ -1,5 +1,5 @@
 <?php
-//Rakibul Kabir Khan
+//STapplyformModel Page
 require_once('Database.php');
 
 function STapply($STapplication){
