@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 06, 2026 at 07:15 PM
+-- Generation Time: Jan 07, 2026 at 09:18 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -17,12 +17,21 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
-
 --
 -- Database: `webtech project test database`
 --
-CREATE DATABASE IF NOT EXISTS `webtech project test database` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `webtech project test database`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `class_routine_and_course_generator`
+--
+
+CREATE TABLE `class_routine_and_course_generator` (
+  `ID` varchar(100) NOT NULL,
+  `department` varchar(100) NOT NULL,
+  `credit` int(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -67,6 +76,56 @@ CREATE TABLE `complaintandadvice` (
 INSERT INTO `complaintandadvice` (`studentid`, `complaint`) VALUES
 ('22468721', 'Please open more sections'),
 ('22468921', 'The canteen food prices are a bit steep. Please reduce the price.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `course_book`
+--
+
+CREATE TABLE `course_book` (
+  `coursename` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `course_book`
+--
+
+INSERT INTO `course_book` (`coursename`) VALUES
+('Data Science'),
+('Human Computer Interaction'),
+('Web Technology');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `faculty_information`
+--
+
+CREATE TABLE `faculty_information` (
+  `facultyID` varchar(100) NOT NULL,
+  `facultyname` varchar(100) NOT NULL,
+  `faculty_department` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `game_slot`
+--
+
+CREATE TABLE `game_slot` (
+  `time` varchar(100) NOT NULL,
+  `slotID` int(100) NOT NULL,
+  `gamename` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `game_slot`
+--
+
+INSERT INTO `game_slot` (`time`, `slotID`, `gamename`) VALUES
+('13:00-14:00', 3, 'Table Tennis');
 
 -- --------------------------------------------------------
 
@@ -118,6 +177,25 @@ INSERT INTO `stapplyform` (`Name`, `Degree`, `CGPA`, `Semester`, `Credits`, `Exp
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `student_id_application`
+--
+
+CREATE TABLE `student_id_application` (
+  `applicationID` int(100) NOT NULL,
+  `department` varchar(100) NOT NULL,
+  `time` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `student_id_application`
+--
+
+INSERT INTO `student_id_application` (`applicationID`, `department`, `time`) VALUES
+(1, 'CSE', '2026-01-07');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -135,6 +213,56 @@ INSERT INTO `users` (`studentid`, `password`) VALUES
 ('22468921', 'jabir123'),
 ('22473021', 'arif1234'),
 ('23517732', 'niloypaul');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `class_routine_and_course_generator`
+--
+ALTER TABLE `class_routine_and_course_generator`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `course_book`
+--
+ALTER TABLE `course_book`
+  ADD PRIMARY KEY (`coursename`);
+
+--
+-- Indexes for table `faculty_information`
+--
+ALTER TABLE `faculty_information`
+  ADD PRIMARY KEY (`facultyID`);
+
+--
+-- Indexes for table `game_slot`
+--
+ALTER TABLE `game_slot`
+  ADD PRIMARY KEY (`slotID`);
+
+--
+-- Indexes for table `student_id_application`
+--
+ALTER TABLE `student_id_application`
+  ADD PRIMARY KEY (`applicationID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `game_slot`
+--
+ALTER TABLE `game_slot`
+  MODIFY `slotID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `student_id_application`
+--
+ALTER TABLE `student_id_application`
+  MODIFY `applicationID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
