@@ -1,5 +1,5 @@
 <?php
-    //Rakibul Kabir Khan Anonymouscomplaintcheck Page
+    //Anonymouscomplaintcheck Page
     session_start();
     require_once('../Models/AnonymouscomplaintModel.php');
     if(isset($_POST['submit'])){
