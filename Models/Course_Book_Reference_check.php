@@ -12,4 +12,5 @@ function coursecheck($course){
         return false;
     }
 }
+
 ?>
