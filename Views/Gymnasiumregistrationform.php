@@ -42,7 +42,7 @@
 </head>
 
 <body>
-<img src="AIUB Logo.png" width="100">
+<img src="../Assests/AIUB_Logo.png" width="100">
 <h3>Gymnasium Registration Form</h3>
 
 <form method="POST" action="Gymnasiumregistrationformcheck.php" enctype="multipart/form-data">
