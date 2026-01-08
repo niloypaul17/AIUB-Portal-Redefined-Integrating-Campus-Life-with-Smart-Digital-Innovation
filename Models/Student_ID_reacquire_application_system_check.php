@@ -1,5 +1,4 @@
 <?php
-
 require_once('Database.php');
 
 function studentcheck($student){
