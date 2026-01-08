@@ -46,7 +46,7 @@
 
 <body>
 
-<img src="AIUB Logo.png" width="100">
+<img src="../Assests/AIUB_Logo.png" width="100">
 <h3>University Notice Board</h3>
 
 <div class="box">
