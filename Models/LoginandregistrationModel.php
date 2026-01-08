@@ -1,5 +1,4 @@
 <?php
-//LoginandregistrationModel Page
 require_once('Database.php');
 
 function login($user){
