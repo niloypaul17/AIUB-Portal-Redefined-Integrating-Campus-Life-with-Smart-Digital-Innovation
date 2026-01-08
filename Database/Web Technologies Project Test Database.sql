@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 07, 2026 at 09:18 PM
+-- Generation Time: Jan 08, 2026 at 07:41 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -32,6 +32,15 @@ CREATE TABLE `class_routine_and_course_generator` (
   `department` varchar(100) NOT NULL,
   `credit` int(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `class_routine_and_course_generator`
+--
+
+INSERT INTO `class_routine_and_course_generator` (`ID`, `department`, `credit`) VALUES
+('23-52080-2', 'CSE', 12),
+('23-52088-2', 'CSE', 12),
+('2321', 'CSE', 123);
 
 -- --------------------------------------------------------
 
@@ -103,10 +112,21 @@ INSERT INTO `course_book` (`coursename`) VALUES
 --
 
 CREATE TABLE `faculty_information` (
-  `facultyID` varchar(100) NOT NULL,
+  `facultyID` int(100) NOT NULL,
   `facultyname` varchar(100) NOT NULL,
-  `faculty_department` varchar(100) NOT NULL
+  `position` varchar(100) NOT NULL,
+  `Enail` varchar(100) NOT NULL,
+  `Location` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `faculty_information`
+--
+
+INSERT INTO `faculty_information` (`facultyID`, `facultyname`, `position`, `Enail`, `Location`) VALUES
+(1, 'MD. AL-AMIN', 'Assistant Professor, Faculty, DEPARTMENT OF COMPUTER SCIENCE', 'alamin@aiub.edu ', 'Building: D - Building Room No: DN109'),
+(2, 'ABHIJIT BHOWMIK', 'Associate Professor, Faculty, DEPARTMENT OF COMPUTER SCIENCE', 'abhijit@aiub.edu', 'Building: D - Building Room No: DNGA11'),
+(3, 'DR. MD. ABDULLAH - AL - JUBAIR', 'Associate Professor, DIRECTOR, DEPARTMENT OF COMPUTER SCIENCE', 'abdullah@aiub.edu ', 'Building: D - Building Room No: DNGA04');
 
 -- --------------------------------------------------------
 
@@ -253,6 +273,12 @@ ALTER TABLE `student_id_application`
 --
 
 --
+-- AUTO_INCREMENT for table `faculty_information`
+--
+ALTER TABLE `faculty_information`
+  MODIFY `facultyID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `game_slot`
 --
 ALTER TABLE `game_slot`
@@ -264,7 +290,6 @@ ALTER TABLE `game_slot`
 ALTER TABLE `student_id_application`
   MODIFY `applicationID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
-
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
