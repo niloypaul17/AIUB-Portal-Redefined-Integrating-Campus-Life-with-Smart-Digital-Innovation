@@ -1,12 +1,13 @@
 <?php
+
 require_once('Database.php');
 
 function classcheck($class){
     $con = getConnection();
-    $sql = "select * from class_routine_and_course_generator where ID='{$class['ID']}' and department='{$class['department']}'";
+    $sql = "INSERT INTO class_routine_and_course_generator (ID,department,credit) VALUES('{$class['ID']}', '{$class['department']}', '{$class['credit']}')";
     $result = mysqli_query($con, $sql);   
     
-    if(mysqli_num_rows($result) == 1){
+    if($result){
         return true;
     }else{
         return false;
