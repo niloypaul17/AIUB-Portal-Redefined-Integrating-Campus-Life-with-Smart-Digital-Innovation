@@ -13,6 +13,7 @@
             $status = login($user);
             if($status){
                 setcookie('status', 'true', time()+3600, '/');
+                $_SESSION['status'] = true;
                 $_SESSION['username'] = $username;
                 header('location: ../Views/Dashboard.php');
             }else{
