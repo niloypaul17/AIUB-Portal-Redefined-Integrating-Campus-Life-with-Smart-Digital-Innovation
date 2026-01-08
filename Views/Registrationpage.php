@@ -36,8 +36,8 @@
                 <legend style="border: 2px solid black">Registration</legend>
                 <br>
                 <label><b>Student ID: </b></label>
-                <input type="text" name="studentid" style="border: 2px solid black" id="studentid" oninput="error1.innerHTML=''">
-                <p id="error1" style="color: red"></p>
+                <input type="text" name="studentid" style="border: 2px solid black" id="studentid" onkeyup="checkStudentId()">
+                <p id="idMsg" style="color: red"></p>
                 <br>
                 <br>
                 <label><b>Password: </b></label>
@@ -77,6 +77,39 @@
         alert("Account has been created successfully!");
         return true;
     }
+    
+    function checkStudentId(){
+    let studentid = document.getElementById('studentid').value;
+
+    if(studentid.length !== 8){
+        document.getElementById('idMsg').innerHTML = "Student ID must be 8 characters";
+        return;
+    }
+
+    let user = {
+        'studentid': studentid
+    };
+
+    let data = JSON.stringify(user);
+
+    let xhttp = new XMLHttpRequest();
+    xhttp.open('POST', '../Controllers/CheckStudentId.php', true);
+    xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhttp.send('user='+data);
+
+    xhttp.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            let response = JSON.parse(this.responseText);
+
+            if(response.status === "exists"){
+                document.getElementById('idMsg').innerHTML = "Student ID already exists";
+            }else{
+                document.getElementById('idMsg').innerHTML = "Student ID available";
+                document.getElementById('idMsg').style.color = "green";
+            }
+        }
+    }
+}
 </script>
 </body>
 </html>
