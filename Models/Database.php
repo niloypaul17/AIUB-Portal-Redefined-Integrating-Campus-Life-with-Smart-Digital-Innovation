@@ -1,5 +1,5 @@
 <?php
-    //Database Page
+
     $host = '127.0.0.1';
     $dbname = "webtech project test database";
     $dbuser = "root";
