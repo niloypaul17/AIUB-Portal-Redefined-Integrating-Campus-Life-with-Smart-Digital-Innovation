@@ -1,5 +1,4 @@
 <?php
-    //Logincheck Page
     session_start();
     require_once('../Models/LoginandregistrationModel.php');
     if(isset($_POST['submit'])){
@@ -12,9 +11,8 @@
             $user = ['studentid'=> $studentid, 'password'=> $password];
             $status = login($user);
             if($status){
+                $_SESSION["studentid"]=$studentid;
                 setcookie('status', 'true', time()+3600, '/');
-                $_SESSION['status'] = true;
-                $_SESSION['username'] = $username;
                 header('location: ../Views/Dashboard.php');
             }else{
                 echo "invalid user!";
