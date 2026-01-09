@@ -1,3 +1,3 @@
 <script>
-    //ajax and json
+    //aAJAX & JASON
 </script>
