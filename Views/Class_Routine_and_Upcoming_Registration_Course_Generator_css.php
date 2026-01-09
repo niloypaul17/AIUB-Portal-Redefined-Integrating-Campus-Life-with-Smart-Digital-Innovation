@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-  //Class_Routine_and_Upcoming_Registration_Course_Generator_css
 <style>
 header{
     position: relative;
@@ -180,7 +179,7 @@ header{
     cursor: pointer;
     animation: appear-bottom 1.5s ease-out forwards;
 }
-#Valid{
+.Valid{
   font-size: 20px;
   margin: 10px;
     height: 30px;

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    //Student_ID_reacquire_application_system_css
 <style>
 header{
     position: relative;
@@ -174,9 +173,9 @@ header{
     cursor: pointer;
     animation: appear-bottom 1.5s ease-out forwards;
 }
-#Valid{
+.Valid{
     font-size: 20px;
-    margin: 10px;
+    margin: 10px 10px 5px 10px;
     height: 30px;
     color: red;
     margin-bottom: 30px;

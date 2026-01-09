@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    //Indoor_Games_playing_slot_css
 <style>
 header{
     position: relative;
@@ -59,7 +58,7 @@ header{
     transform: translateY(20px);
   }
   to {
-    opacity: 1; /* End fully visible */
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -138,9 +137,9 @@ header{
     width: auto;
     height: auto;
 }
-#Valid{
+.Valid{
     font-size: 20px;
-    margin: 10px;
+    margin: 10px 10px 5px 10px;
     height: 30px;
     color: red;
     margin-bottom: 30px;

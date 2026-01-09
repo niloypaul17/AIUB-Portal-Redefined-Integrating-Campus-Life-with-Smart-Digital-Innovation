@@ -1,5 +1,4 @@
 <?php
-//Dashboard Page
    require_once('../Controllers/Authenticationcheck.php');
 ?>
 
@@ -45,16 +44,16 @@
         <a href="Anonymousform.php">Complaint Form</a>
         <a href="STapplyform.php">ST Apply</a>
         <a href="Clubinformation.php">Clubs</a>
-        <a href="Swimmingpoolregistration.php">Swimming Pool</a>
-        <a href="Canteenmenu.php">Canteen</a>
-        <a href="Labslotbooking.php">Lab slot</a>
-        <a href="Carparkingmanagementsystem.php">Parking</a>
-        <a href="Alumniinformationandinternshipfinder.php">Alumni Information</a>
-        <a href="Gymnasiumregistrationform.php">Gymnasium</a>
-        <a href="Documentprintingsytem.php">Printing</a>
-        <a href="Universityfilesharingsystem.php">File sharing</a> 
-        <a href="Eventandnoticedisplay.php">Events</a> 
-        <a href="Universityareasystem.php">Map</a> 
+        <a href="#">Swimming Pool</a>
+        <a href="#">Canteen</a>
+        <a href="#">Lab slot</a>
+        <a href="#">Parking</a>
+        <a href="#">Alumni Information</a>
+        <a href="#">Gymnasium</a>
+        <a href="#">Printing</a>
+        <a href="#">File sharing</a> 
+        <a href="#">Events</a> 
+        <a href="#">Map</a> 
         <a href="Faculty_Information_html.php">Faculty</a>
         <a href="Class_Routine_and_Upcoming_Registration_Course_Generator_html.php">Class Routine</a>
         <a href="Course_Book_Reference_and_Online_Resources_html.php">Book Reference</a>

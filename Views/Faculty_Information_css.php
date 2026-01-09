@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    //Faculty_Information_css
 <style>
 header{
     position: relative;
@@ -98,12 +97,17 @@ header{
     border-radius: 50px;
     margin-bottom: 30px;
 }
-#Valid{
+.Valid{
     font-size: 20px;
     margin: 10px;
     height: 30px;
     color: red;
     margin-bottom: 30px;
+}
+#c1{
+    position: absolute;
+    top: 200px;
+    left: 190px;
 }
 #sub{
     width: 450px;
