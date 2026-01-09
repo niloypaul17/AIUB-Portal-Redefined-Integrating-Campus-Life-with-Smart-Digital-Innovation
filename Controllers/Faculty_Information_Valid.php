@@ -1,26 +1,22 @@
 <?php
-//Faculty_Information_Valid
 require_once("Authenticationcheck.php");
 require_once("../Models/faculty_information_check.php");
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-    $fid=$_POST["fid"];
-    $department=$_POST["S1"];
+    $fname=$_POST["fid"];
+    $massage2="";
     
-    if($fid=="" && $department==""){
-        $massage="Fill every box";
-    }
-    else if($fid=="" ){
-        $massage="Fill name";
-    }
-    else if($department=="" ){
-        $massage="Fill department";
+    if($fname=="" ){
+        $massage="Fill name from php";
     }
     else{
-        $faculty=['facultyID'=>$fid,'department'=>$department];
-        $status=facultycheck($faculty);
-        if($status){
-            $massage2="successful";
+        $faculty=['facultyname'=>$fname];
+        $r=facultycheck($faculty);
+        if($r){
+        $massage2=$r;
+        }
+        else{
+            $massage2="Invalid Faculty name";
         }
     }
 }
