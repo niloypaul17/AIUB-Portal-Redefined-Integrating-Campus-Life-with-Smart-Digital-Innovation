@@ -1,5 +1,4 @@
 <?php
-    //STapplyformcheck Page
     session_start();
     require_once('../Models/STapplyformModel.php');
     if(isset($_POST['submit'])){$name = $_REQUEST['name'];$degree = $_REQUEST['degree'];$cgpa = $_REQUEST['cgpa'];$semester = $_REQUEST['semester'];$credits = $_REQUEST['credits'];$experience = $_REQUEST['exp'];$reference = $_REQUEST['reference'];
