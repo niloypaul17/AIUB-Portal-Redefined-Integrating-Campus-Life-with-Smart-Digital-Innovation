@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <script>
+    
+<script>
         function faculty(){
             let fid=document.getElementById("Input1");
             let div=document.getElementById("c1");
 
-           if(fid=="" ){
-               div.innerHTML="Fill name";
-               return false;
+           if(fid==""){
+               div.innerHTML="Fill name from js";
+               return true;
             }
-          else{
-              div.innerHTML="Successfull";
-              return false;
-           }
-           return false;
+           return true;
       }
-    </script>
-</html>
+</script>
