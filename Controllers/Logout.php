@@ -1,5 +1,6 @@
 <?php
-    //Log out Page
+    session_start();
     setcookie('status', 'true', time()-10, '/');
+    session_destroy();
     header('location: ../Views/Loginpage.php');
 ?>
