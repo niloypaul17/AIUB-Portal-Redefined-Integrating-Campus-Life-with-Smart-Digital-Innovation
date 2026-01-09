@@ -38,8 +38,8 @@ CREATE TABLE `class_routine_and_course_generator` (
 --
 
 INSERT INTO `class_routine_and_course_generator` (`ID`, `department`, `credit`) VALUES
-('23-52080-2', 'CSE', 12),
-('23-52088-2', 'CSE', 12),
+('23-51212-2', 'CSE', 12),
+('23-52121-2', 'CSE', 12),
 ('2321', 'CSE', 123);
 
 -- --------------------------------------------------------
