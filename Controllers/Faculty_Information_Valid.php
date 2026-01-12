@@ -1,7 +1,6 @@
 <?php
 require_once("Authenticationcheck.php");
-require_once("../Models/faculty_information_check.php");
-
+require_once("../Models/datafaculty.php");
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     $fname=$_POST["fid"];
     $massage2="";
@@ -10,14 +9,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $massage="Fill name from php";
     }
     else{
-        $faculty=['facultyname'=>$fname];
-        $r=facultycheck($faculty);
-        if($r){
-        $massage2=$r;
-        }
-        else{
-            $massage2="Invalid Faculty name";
-        }
+        $_SESSION['fa']=$fname;
     }
 }
 ?>
