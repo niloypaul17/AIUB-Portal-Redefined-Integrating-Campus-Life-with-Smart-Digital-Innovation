@@ -1,7 +1,7 @@
 <?php
 
     $host = '127.0.0.1';
-    $dbname = "Web Technologies Project Test Database";
+    $dbname = "web technologies project test database";
     $dbuser = "root";
     $dbpass = "";
 

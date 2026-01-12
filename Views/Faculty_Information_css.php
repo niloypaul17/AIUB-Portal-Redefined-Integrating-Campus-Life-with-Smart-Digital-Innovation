@@ -6,7 +6,7 @@ header{
     width: 1518px;
     height: 100px;
     background-color: transparent;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(14px);
     border: 2px solid blue;
     color: white;
     border-radius: 20px;
@@ -99,15 +99,23 @@ header{
 }
 .Valid{
     font-size: 20px;
-    margin: 10px;
+    margin: 2px;
     height: 30px;
     color: red;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 #c1{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
     position: absolute;
-    top: 200px;
-    left: 190px;
+    width: auto;
+    top: 350px;
+    left: 1030px;
 }
 #sub{
     width: 450px;
