@@ -1,8 +1,10 @@
 <?php
+require_once("Authenticationcheck.php");
 require_once("Faculty_Information_css.php");
 //require_once("../Controllers/Faculty_Information_Valid.php");
 require_once("../Controllers/Faculty_Information_Valid_js.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <html>

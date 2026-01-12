@@ -1,8 +1,10 @@
 <?php
+require_once("Authenticationcheck.php");
 require_once("Indoor_Games_playing_slot_css.php");
 require_once("../Controllers/Indoor_Games_playing_slot_Valid.php");
 require_once("../Controllers/Indoor_Games_playing_slot_Valid_js.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <html>

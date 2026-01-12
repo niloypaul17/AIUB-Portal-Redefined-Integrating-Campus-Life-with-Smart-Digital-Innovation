@@ -1,8 +1,10 @@
 <?php
+require_once("Authenticationcheck.php");
 require_once("Course_Book_Reference_and_Online_Resources_css.php");
 require_once("../Controllers/Course_Book_Reference_and_Online_Resources_Valid.php");
 require_once("../Controllers/Course_Book_Reference_and_Online_Resources_Valid_js.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <html>

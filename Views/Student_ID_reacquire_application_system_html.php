@@ -1,8 +1,10 @@
 <?php
+require_once("Authenticationcheck.php");
 require_once("Student_ID_reacquire_application_system_css.php");
 require_once("../Controllers/Student_ID_reacquire_application_system_Valid.php");
 require_once("../Controllers/Student_ID_reacquire_application_system_Valid_js.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <html>
