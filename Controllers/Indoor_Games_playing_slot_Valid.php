@@ -1,21 +1,31 @@
 <?php
-require_once("Authenticationcheck.php");
 require_once("../Models/Indoor_Games_playing_slot_check.php");
+if(!isset($_SESSION)) { session_start(); }
 
-if($_SERVER["REQUEST_METHOD"]=="POST"){
-    $gamename=$_POST["S1"];
-    $time=$_POST["S2"];
-    $massage2="";
-    
-    if($gamename=="" && $time==""){
-        $massage="Fill All Fields";
-    }
-    else{
-        $game=['gamename'=>$gamename,'time'=>$time];
-        $status=gamecheck($game);
-        if($status){
-            $massage2="Successfully Registered! GAME NAME: ".$gamename." TIME: ".$time;
-        }
+$massage = "";
+$studentid = $_SESSION['studentid'] ?? '22468721'; 
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $gameData = [
+        'gamename' => $_POST["gamename"],
+        'time' => $_POST["time"],
+        'studentid' => $studentid
+    ];
+
+    $status = gamecheck($gameData);
+
+    if ($status === "taken") {
+        $massage = " This slot is already booked by another student.";
+    } elseif ($status === "time_conflict") {
+        $massage = " You already have another game booked at " . $gameData['time'];
+    } elseif ($status === "duplicate") {
+        $massage = " You have already booked a slot for " . $gameData['gamename'];
+    } elseif ($status) {
+        $massage = " Success! Slot confirmed at " . $gameData['time'];
+    } else {
+        $massage = " Error in booking. Try again.";
     }
 }
+
+$myList = getMyBookings($studentid);
 ?>

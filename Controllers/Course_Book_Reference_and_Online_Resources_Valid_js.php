@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <script>
-        function checkbook(){
-            let course=document.getElementById("I1").value;
-            let div=document.getElementById("c1");
+<script>
+    function checkclass() {
+        let dept = document.getElementById("I2").value;
+        let courses = document.querySelectorAll('input[name="courses[]"]:checked');
+        let div = document.getElementById("c1");
 
-            if(course==""){
-                div.innerHTML="Fill Course Name";
-                return true;
-            }
-            else{
-                div.innerHTML="Successfully Submitted";
-                return true;
-            }
-            return true;
+        if (dept == "") {
+            div.innerHTML = "Please Select Department";
+            return false;
         }
-    </script>
-</html>
+        if (courses.length == 0) {
+            div.innerHTML = "Select at least one completed course";
+            return false;
+        }
+        return true;
+    }
+</script>

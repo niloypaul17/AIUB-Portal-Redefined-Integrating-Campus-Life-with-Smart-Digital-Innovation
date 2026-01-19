@@ -1,221 +1,186 @@
-<!DOCTYPE html>
-<html>
 <style>
-header{
+header {
     position: relative;
     width: 100%;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid blue;
-    color: white;
-    border-radius: 20px;
+    height: 90px;
+    background-color: #0280ff;
+    border-bottom: 4px solid #11218b;
+    z-index: 10;
 }
-#logo{
+
+#logo {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 10px;
+    left: 20px;
     width: 70px;
-    height: 70px;
 }
-#BackImg{
+
+#Portal {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 10px;
+    left: 100px;
+    height: 65px;
+}
+
+#B1 {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    width: 110px;
+    height: 40px;
+    background-color: #2b19a1;
+    color: #f6faff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#B1:hover {
+    background-color: #ffffff;
+    color: #003366;
+}
+
+#BackImg {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
+    filter: brightness(0.35);
+    object-fit: cover;
 }
-#Title1{
-    position: absolute;
-    top: 140px;
-    color: white;
-    font-size: 75px;
-    left: 640px;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    font-family: monospace;
 
-    animation: appear-bottom 1.5s ease-out forwards;
-}
-#c1{
-    color: white;
-    border: 1px solid white;
-    background-color: transparent;
-    backdrop-filter: blur(8px);
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 20px;
+#Title1 {
     position: absolute;
-    width: auto;
-    top: 20px;
-    left: 600px;
-    animation: appear-bottom 1.5s ease-out forwards;
-}
-#INF1{
-    color: black;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 20px;
-    padding: 10px;
-    position: absolute;
-    width: auto;
-    height: auto;
-    top: 420px;
-    left: 350px;
-    border: 2px solid blue;
-    animation: appear-bottom 1.5s ease-out forwards;
-}
-#Title2{
-    position: absolute;
-    top: 290px;
-    color: white;
-    font-size: 48px;
-    left: 520px;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    font-family: monospace;
-
-    animation: appear-bottom 1.5s ease-out forwards;
-}
-@keyframes appear-bottom {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
+    top: 110px;
     width: 100%;
-  }
+    text-align: center;
+    color: #ffffff;
+    font-size: 45px;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
 }
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
-  }
-}
-#Portal{
+
+#Title2 {
     position: absolute;
-    top: 15px;
-    left: 95px;
-    width: auto;
-    height: 70px;
+    top: 170px;
+    width: 100%;
+    text-align: center;
+    color: #f9ad01;
+    font-size: 22px;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
 }
-#B1{
+
+#f1 {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 100px;
-    height: 70px;
-    border: 1px solid transparent;
-    background-color: blue;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
+    top: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 750px;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
 }
-#B1:hover{
-    border: 1px solid white;
-    background-color: transparent;
-    backdrop-filter: blur(6px);
+
+.div {
+    font-size: 16px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 15px;
 }
-#a1{
-    position: absolute;
-    top: 40px;
-    right: 125px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-}
-#a2{
-    position: absolute;
-    top: 40px;
-    right: 255px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-}
-#a3{
-    position: absolute;
-    top: 40px;
-    right: 365px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-}
-#f1{
-    position: absolute;
-    top: 400px;
-    left: 600px;
+
+#I2 {
+    width: 100%;
     padding: 10px;
-    width: auto;
-    height: auto;
+    border: 1px solid #003366;
+    border-radius: 4px;
+    margin-top: 5px;
 }
-.div{
-    font-size: 20px;
-    margin: 10px;
-    width: 500px;
-    height: 30px;
-    background-color: transparent;
-    backdrop-filter: blur(24px);
-    color: white;
-    border-radius: 20px;
-    padding: 20px;
-    border: 1px solid blue;
-    animation: appear-bottom 1.5s ease-out forwards;
+
+.course-list {
+    max-height: 180px;
+    overflow-y: scroll;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-top: 8px;
+    border-radius: 5px;
 }
-#I1{
-    width: 330px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 1px solid white;
-    border-radius: 10px;
+
+label {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #eeeeee;
+    font-weight: normal;
+    color: #333333;
 }
-#I2{
-    width: 330px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 1px solid white;
-    border-radius: 10px;
-}
-#I3{
-    width: 330px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 1px solid white;
-    border-radius: 10px;
-}
-#IB1{
-    margin: 10px;
-    height: 30px;
-    color: blue;
-    width: 540px;
-    background-color: rgba(255, 255, 255, 1.0);
-    border: 1px solid blue;
-    border-radius: 10px;
+
+#IB1 {
+    width: 100%;
+    height: 45px;
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    animation: appear-bottom 1.5s ease-out forwards;
+    margin-top: 10px;
+    transition: 0.3s;
 }
-.Valid{
-  font-size: 20px;
-  margin: 10px;
-    height: 30px;
-  color: red;
+
+#IB1:hover {
+    background-color: #00509e;
 }
-#IB1:hover{
-    background-color: transparent;
-    backdrop-filter: blur(24px);
-    color: white;
-    border: 1px solid white;
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+}
+
+#c1 {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f4f8;
+    border-left: 5px solid #003366;
+    border-radius: 4px;
+    color: #333333;
+}
+
+.routine-box {
+    background-color: #ffffff;
+    border-left: 5px solid #f9ad01;
+    padding: 12px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+center b {
+    font-size: 20px;
+    color: #003366;
 }
 </style>
-</html>

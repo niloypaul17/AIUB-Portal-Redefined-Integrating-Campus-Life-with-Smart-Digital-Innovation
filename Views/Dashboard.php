@@ -55,7 +55,7 @@
         <a href="Eventandnoticedisplay.php"><b>Events</b></a> 
         <a href="Universityareasystem.php"><b>AIUB Map</b></a> 
         <a href="Faculty_Information_html.php"><b>Faculty Information</b></a>
-        <a href="Course_Credit_Information_html.php"><b>Course Credit Information</b></a>
+        <a href="Course_Credit_Information_html.php"><b>Course & Credit Information</b></a>
         <a href="Course_Book_Reference_and_Online_Resources_html.php"><b>Book Reference</b></a>
         <a href="Indoor_Games_playing_slot_html.php"><b>Indoor Games</b></a>
         <a href="Student_ID_application_system_html.php"><b>Student ID Application System</b></a>      

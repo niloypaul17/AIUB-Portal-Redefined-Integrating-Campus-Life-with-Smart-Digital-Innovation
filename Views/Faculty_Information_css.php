@@ -96,13 +96,7 @@ header{
     border-radius: 50px;
     margin-bottom: 30px;
 }
-.Valid{
-    font-size: 20px;
-    margin: 2px;
-    height: 30px;
-    color: red;
-    margin-bottom: 5px;
-}
+
 #c1{
     color: white;
     border: 1px solid white;
@@ -166,33 +160,6 @@ header{
     border: 1px solid white;
     background-color: transparent;
     backdrop-filter: blur(6px);
-}
-#a1{
-    position: absolute;
-    top: 40px;
-    right: 125px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-}
-#a2{
-    position: absolute;
-    top: 40px;
-    right: 255px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-}
-#a3{
-    position: absolute;
-    top: 40px;
-    right: 365px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
 }
 </style>
 </html>

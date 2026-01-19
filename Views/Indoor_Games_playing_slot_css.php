@@ -1,221 +1,159 @@
-<!DOCTYPE html>
-<html>
 <style>
-header{
-    position: relative;
-    width: 100%;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid blue;
-    color: white;
-    border-radius: 20px;
+header {
+position: relative;
+width: 100%;
+height: 100px;
+background-color: rgba(255, 255, 255, 0.95);
+border-bottom: 3px solid #002147;
+border-radius: 0 0 15px 15px;
 }
-#logo{
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 70px;
-    height: 70px;
+#logo {
+position: absolute;
+top: 15px;
+left: 15px;
+width: 70px;
+height: 70px;
 }
-#BackImg{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+#Portal {
+position: absolute;
+top: 15px;
+left: 95px;
+height: 70px;
 }
-#Title1{
-    position: absolute;
-    top: 140px;
-    color: white;
-    font-size: 75px;
-    left: 650px;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    font-family: monospace;
-
-    animation: appear-bottom 1.5s ease-out forwards;
+#BackImg {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+filter: brightness(0.4);
+object-fit: cover;
 }
-#Title2{
-    position: absolute;
-    top: 290px;
-    color: white;
-    font-size: 48px;
-    left: 550px;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    font-family: monospace;
-
-    animation: appear-bottom 1.5s ease-out forwards;
+#Title1 {
+position: absolute;
+top: 130px;
+color: #ffffff;
+width: 100%;
+text-align: center;
+font-size: 60px;
+font-family: serif;
+animation: appear-bottom 1.5s ease-out;
+}
+#Title2 {
+position: absolute;
+top: 210px;
+color: #f2f2f2;
+width: 100%;
+text-align: center;
+font-size: 30px;
+font-family: serif;
+animation: appear-bottom 1.5s ease-out;
 }
 @keyframes appear-bottom {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+from { opacity: 0; transform: translateY(30px); }
+to { opacity: 1; transform: translateY(0); }
 }
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+#B1 {
+position: absolute;
+top: 25px;
+right: 25px;
+width: 120px;
+height: 50px;
+background-color: #002147;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
 }
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
-  }
+#B1:hover {
+background-color: #ffffff;
+color: #002147;
+border: 1px solid #002147;
 }
-#Portal{
-    position: absolute;
-    top: 15px;
-    left: 95px;
-    width: auto;
-    height: 70px;
+#f1 {
+position: absolute;
+top: 320px;
+left: 50%;
+transform: translateX(-50%);
+width: 550px;
 }
-#B1{
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 100px;
-    height: 70px;
-    border: 1px solid transparent;
-    background-color: blue;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
+.div {
+font-size: 18px;
+margin-bottom: 15px;
+padding: 20px;
+background: rgba(0, 33, 71, 0.8);
+color: white;
+border-radius: 10px;
+border: 1px solid white;
 }
-#B1:hover{
-    border: 1px solid white;
-    background-color: transparent;
-    backdrop-filter: blur(6px);
+#I2, #I3 {
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+margin-top: 10px;
+border: none;
 }
-#a1{
-    position: absolute;
-    top: 40px;
-    right: 125px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
+#IB1 {
+width: 100%;
+height: 45px;
+background-color: white;
+color: #002147;
+font-weight: bold;
+border-radius: 5px;
+cursor: pointer;
+border: none;
 }
-#a2{
-    position: absolute;
-    top: 40px;
-    right: 255px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
+#IB1:hover {
+background-color: #002147;
+color: white;
+border: 1px solid white;
 }
-#a3{
-    position: absolute;
-    top: 40px;
-    right: 365px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
+#c1 {
+margin-top: 15px;
+padding: 15px;
+background: rgba(0,0,0,0.6);
+color: #00ffcc;
+border-radius: 10px;
+text-align: center;
+font-weight: bold;
 }
-#f1{
-    position: absolute;
-    top: 400px;
-    left: 600px;
-    padding: 10px;
-    width: auto;
-    height: auto;
+#INF1 {
+position: absolute;
+top: 320px;
+left: 50px;
+width: 300px;
+background: rgba(255,255,255,0.95);
+padding: 20px;
+border-radius: 10px;
+border-left: 8px solid #002147;
+color: #333;
 }
-#INF1{
-    color: black;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 20px;
-    padding: 65px 30px;
-    position: absolute;
-    text-align; center;
-    width: auto;
-    height: auto;
-    top: 420px;
-    left: 300px;
-    border: 2px solid blue;
-    animation: appear-bottom 1.5s ease-out forwards;
+#BookingTable {
+position: absolute;
+top: 700px;
+left: 50%;
+transform: translateX(-50%);
+width: 900px;
+background: rgba(255,255,255,0.95);
+border-radius: 10px;
+padding: 30px;
+box-shadow: 0 0 20px rgba(0,0,0,0.4);
+margin-bottom: 100px;
 }
-
-#result{
-    font-size: 20px;
-    margin: 10px;
-    height: 30px;
-    color: red;
-    margin-bottom: 30px;
+table {
+width: 100%;
+border-collapse: collapse;
 }
-.div{
-    font-size: 20px;
-    margin: 10px;
-    width: 500px;
-    height: 30px;
-    background-color: transparent;
-    backdrop-filter: blur(24px);
-    color: white;
-    border-radius: 20px;
-    padding: 20px;
-    border: 1px solid blue;
-    animation: appear-bottom 1.5s ease-out forwards;
+th {
+background: #002147;
+color: white;
+padding: 15px;
 }
-
-#c1{
-    color: white;
-    border: 1px solid white;
-    background-color: transparent;
-    backdrop-filter: blur(8px);
-    border-radius: 20px;
-    font-size: 20px;
-    position: absolute;
-    text-align: center;
-    width: 550px;
-    height: auto;
-    top: auto;
-    left: auto;
-    animation: appear-bottom 1.5s ease-out forwards;
-}
-
-#I2{
-    width: 330px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 1px solid white;
-    border-radius: 10px;
-}
-#I3{
-    width: 330px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 1px solid white;
-    border-radius: 10px;
-}
-#IB1{
-    margin: 10px;
-    height: 30px;
-    color: blue;
-    width: 540px;
-    background-color: rgba(255, 255, 255, 1.0);
-    border: 1px solid blue;
-    border-radius: 10px;
-    cursor: pointer;
-    animation: appear-bottom 1.5s ease-out forwards;
-}
-#IB1:hover{
-    background-color: transparent;
-    backdrop-filter: blur(24px);
-    color: white;
-    border: 1px solid white;
+td {
+padding: 15px;
+border-bottom: 1px solid #ddd;
+text-align: center;
+color: #222;
 }
 </style>
-</html>

@@ -28,9 +28,7 @@ require_once("../Controllers/Faculty_Information_Valid_js.php");
             <input type="text" placeholder="Input Faculty name" id="Input1" name="fid">
             <input type="button" value="Search" id="sub" onclick="ajaxapply()">
             </center>
-            <center>
-                <!--<p class="Valid"></p>-->
-            </center>
+        
             </div>
             <div id="c1">
                 Name: <br><br>

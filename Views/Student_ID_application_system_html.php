@@ -43,10 +43,25 @@ require_once("../Controllers/Student_ID_application_system_Valid_js.php");
                 <input type="date" name="date" id="I2">
             </div>
             <input type="submit" id="IB1">
+
             <div id="c1">
-                <p><?php if(isset($massage)){echo $massage;}?></p>
-                <p><?php if(isset($massage2)){echo $massage2;}?></p>
+                <?php 
+                if (!empty($massage) || !empty($massage2)) {
+                    
+                    if (!empty($massage)){
+                        echo "<p>$massage</p>";
+                    }
+
+                    if (!empty($massage2)){
+                        echo "<p>$massage2</p>";
+                    }
+
+                } else {
+                    echo "<p>After filling all fields click on Submit Button</p>";
+                }
+                ?>    
             </div>
+
         </form>
         <div id="INF1">
                 <center>

@@ -167,7 +167,7 @@ header{
     color: black;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
-    padding: 10px;
+    padding: 100px 10px;
     position: absolute;
     width: auto;
     height: auto;

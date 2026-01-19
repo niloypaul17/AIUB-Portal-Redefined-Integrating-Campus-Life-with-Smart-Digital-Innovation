@@ -9,6 +9,9 @@
         <style>
             body {
             background-color: skyblue;
+            width: auto;
+            height: auto;
+
             }
             label{
                 display: inline-block;
@@ -16,10 +19,7 @@
             }
             .box {
             width: 300px;
-            margin-top: 200px;
-            margin-right: 200px;
-            margin-bottom: 300px;
-            margin-left: 750px;
+            margin: auto;
             padding: 20px;
             background-color: white;
             border: 2px solid black;
