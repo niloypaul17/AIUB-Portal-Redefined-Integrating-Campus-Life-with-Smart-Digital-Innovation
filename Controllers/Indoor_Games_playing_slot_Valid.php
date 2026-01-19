@@ -8,13 +8,13 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $massage2="";
     
     if($gamename=="" && $time==""){
-        $massage="Fill every box from php";
+        $massage="Fill All Fields";
     }
     else{
         $game=['gamename'=>$gamename,'time'=>$time];
         $status=gamecheck($game);
         if($status){
-            $massage2="Successfully registered! GAME NAME: ".$gamename." TIME: ".$time;
+            $massage2="Successfully Registered! GAME NAME: ".$gamename." TIME: ".$time;
         }
     }
 }

@@ -7,19 +7,19 @@
             let div=document.getElementById("c1");
 
             if(department=="" && !time.value){
-                div.innerHTML="Fill all boxs from js";
+                div.innerHTML="Fill All Fields";
                 return true;
             }
             else if(department=="" ){
-                div.innerHTML="Fill department name from js";
+                div.innerHTML="Fill Department Name";
                 return true;
             }
             else if(!time.value){
-                div.innerHTML="Fill time from js";
+                div.innerHTML="Fill Date";
                 return true;
             }
             else{
-                div.innerHTML="Successful from js";
+                div.innerHTML="Successfully Submitted";
                 return true;
             }
             return true;

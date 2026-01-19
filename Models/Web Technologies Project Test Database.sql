@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 08, 2026 at 07:41 AM
+-- Generation Time: Jan 19, 2026 at 11:42 AM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,29 +18,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `webtech project test database`
+-- Database: `web technologies project test database`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `class_routine_and_course_generator`
---
-
-CREATE TABLE `class_routine_and_course_generator` (
-  `ID` varchar(100) NOT NULL,
-  `department` varchar(100) NOT NULL,
-  `credit` int(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `class_routine_and_course_generator`
---
-
-INSERT INTO `class_routine_and_course_generator` (`ID`, `department`, `credit`) VALUES
-('23-51212-2', 'CSE', 12),
-('23-52121-2', 'CSE', 12),
-('2321', 'CSE', 123);
 
 -- --------------------------------------------------------
 
@@ -65,7 +44,8 @@ INSERT INTO `clubapplyform` (`name`, `studentid`, `semester`, `passion`, `reason
 ('Md. Al Jabir ', '22468921', 'Summer 24-25', 'Photography', 'I want to improve my Photography skills.'),
 ('Md. Ariful Islam', '22473021', 'Summer 24-25', 'Photography', 'I want to explore Bangladesh and take pictures.'),
 ('Niloy Paul', '23517732', 'fall 24-25', 'Coding', 'Learn coding with a team.'),
-('abc', '12345678', 'fall 24-25', 'abc', 'abc');
+('abc', '12345678', 'fall 24-25', 'abc', 'abc'),
+('NILOY PAUL', '11111111', '5', 'H', 'H');
 
 -- --------------------------------------------------------
 
@@ -108,6 +88,29 @@ INSERT INTO `course_book` (`coursename`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `course_credit_information`
+--
+
+CREATE TABLE `course_credit_information` (
+  `ID` varchar(100) NOT NULL,
+  `department` varchar(100) NOT NULL,
+  `credit` int(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `course_credit_information`
+--
+
+INSERT INTO `course_credit_information` (`ID`, `department`, `credit`) VALUES
+('', 'CSE', 12),
+('11111111', 'CSE', 25),
+('23-51212-2', 'CSE', 12),
+('23-52121-2', 'CSE', 12),
+('2321', 'CSE', 123);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `faculty_information`
 --
 
@@ -115,7 +118,7 @@ CREATE TABLE `faculty_information` (
   `facultyID` int(100) NOT NULL,
   `facultyname` varchar(100) NOT NULL,
   `position` varchar(100) NOT NULL,
-  `Enail` varchar(100) NOT NULL,
+  `Email` varchar(100) NOT NULL,
   `Location` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -123,7 +126,7 @@ CREATE TABLE `faculty_information` (
 -- Dumping data for table `faculty_information`
 --
 
-INSERT INTO `faculty_information` (`facultyID`, `facultyname`, `position`, `Enail`, `Location`) VALUES
+INSERT INTO `faculty_information` (`facultyID`, `facultyname`, `position`, `Email`, `Location`) VALUES
 (1, 'MD. AL-AMIN', 'Assistant Professor, Faculty, DEPARTMENT OF COMPUTER SCIENCE', 'alamin@aiub.edu ', 'Building: D - Building Room No: DN109'),
 (2, 'ABHIJIT BHOWMIK', 'Associate Professor, Faculty, DEPARTMENT OF COMPUTER SCIENCE', 'abhijit@aiub.edu', 'Building: D - Building Room No: DNGA11'),
 (3, 'DR. MD. ABDULLAH - AL - JUBAIR', 'Associate Professor, DIRECTOR, DEPARTMENT OF COMPUTER SCIENCE', 'abdullah@aiub.edu ', 'Building: D - Building Room No: DNGA04');
@@ -145,7 +148,10 @@ CREATE TABLE `game_slot` (
 --
 
 INSERT INTO `game_slot` (`time`, `slotID`, `gamename`) VALUES
-('13:00-14:00', 3, 'Table Tennis');
+('13:00-14:00', 3, 'Table Tennis'),
+('13:00-14:00', 4, 'Pool'),
+('11:00-12:00', 5, 'Pool'),
+('13:00-14:00', 6, 'Pool');
 
 -- --------------------------------------------------------
 
@@ -211,7 +217,15 @@ CREATE TABLE `student_id_application` (
 --
 
 INSERT INTO `student_id_application` (`applicationID`, `department`, `time`) VALUES
-(1, 'CSE', '2026-01-07');
+(1, 'CSE', '2026-01-07'),
+(2, 'CSE', '2026-01-15'),
+(3, 'CSE', '2026-01-03'),
+(4, 'CSE', '2026-01-15'),
+(5, 'CSE', '2026-01-08'),
+(6, 'EEE', '2026-01-15'),
+(7, 'EEE', '2026-01-15'),
+(8, 'EEE', '2026-01-15'),
+(9, 'EEE', '2026-01-15');
 
 -- --------------------------------------------------------
 
@@ -232,23 +246,25 @@ INSERT INTO `users` (`studentid`, `password`) VALUES
 ('22468721', 'rakibulkabir'),
 ('22468921', 'jabir123'),
 ('22473021', 'arif1234'),
-('23517732', 'niloypaul');
+('23517732', 'niloypaul'),
+('11111111', '11111111'),
+('22222222', '22222222');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `class_routine_and_course_generator`
---
-ALTER TABLE `class_routine_and_course_generator`
-  ADD PRIMARY KEY (`ID`);
-
---
 -- Indexes for table `course_book`
 --
 ALTER TABLE `course_book`
   ADD PRIMARY KEY (`coursename`);
+
+--
+-- Indexes for table `course_credit_information`
+--
+ALTER TABLE `course_credit_information`
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indexes for table `faculty_information`
@@ -282,13 +298,13 @@ ALTER TABLE `faculty_information`
 -- AUTO_INCREMENT for table `game_slot`
 --
 ALTER TABLE `game_slot`
-  MODIFY `slotID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `slotID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `student_id_application`
 --
 ALTER TABLE `student_id_application`
-  MODIFY `applicationID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `applicationID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

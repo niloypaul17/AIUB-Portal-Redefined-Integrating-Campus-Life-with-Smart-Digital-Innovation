@@ -34,7 +34,7 @@ require_once("../Controllers/Course_Book_Reference_and_Online_Resources_Valid_js
             <input type="submit" id="IB1">
             <div id="c1">
                 <p class="Valid"><?php if(isset($massage)){echo $massage;}?></p>
-                <p><?php if(isset($massage2)){echo $massage2;}else{ echo 'Book not found';}?></p>
+                <p><?php if(isset($massage2)){echo $massage2;}else{ echo '';}?></p>
             </div>
             
         </form>

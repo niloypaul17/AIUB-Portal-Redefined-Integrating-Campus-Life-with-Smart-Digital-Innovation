@@ -6,11 +6,11 @@
             let div=document.getElementById("c1");
 
             if(course==""){
-                div.innerHTML="Fill course name from js";
+                div.innerHTML="Fill Course Name";
                 return true;
             }
             else{
-                div.innerHTML="successful from js";
+                div.innerHTML="Successfully Submitted";
                 return true;
             }
             return true;

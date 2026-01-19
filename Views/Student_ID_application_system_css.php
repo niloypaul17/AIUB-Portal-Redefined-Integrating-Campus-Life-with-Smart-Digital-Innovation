@@ -101,41 +101,7 @@ header{
     background-color: transparent;
     backdrop-filter: blur(6px);
 }
-#a1{
-    position: absolute;
-    top: 40px;
-    right: 125px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-}
-#a2{
-    position: absolute;
-    top: 40px;
-    right: 255px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-}
-#a3{
-    position: absolute;
-    top: 40px;
-    right: 365px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-}
-#f1{
-    position: absolute;
-    top: 400px;
-    left: 600px;
-    padding: 10px;
-    width: auto;
-    height: auto;
-}
+
 .div{
     font-size: 20px;
     margin: 10px;
@@ -149,20 +115,23 @@ header{
     border: 1px solid blue;
     animation: appear-bottom 1.5s ease-out forwards;
 }
+
 #c1{
     color: white;
     border: 1px solid white;
     background-color: transparent;
     backdrop-filter: blur(8px);
     border-radius: 20px;
-    padding: 20px;
     font-size: 20px;
     position: absolute;
-    width: auto;
-    top: 20px;
-    left: 600px;
+    text-align: center;
+    width: 550px;
+    height: auto;
+    top: auto;
+    left: auto;
     animation: appear-bottom 1.5s ease-out forwards;
 }
+
 #I1{
     width: 330px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -213,19 +182,6 @@ header{
     color: white;
     border: 1px solid white;
 }
-.Valid{
-    font-size: 20px;
-    margin: 10px 10px 5px 10px;
-    height: 30px;
-    color: red;
-    margin-bottom: 30px;
-}
-#result{
-    font-size: 20px;
-    margin: 10px;
-    height: 30px;
-    color: red;
-    margin-bottom: 30px;
-}
+
 </style>
 </html>

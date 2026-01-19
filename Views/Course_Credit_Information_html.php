@@ -1,6 +1,6 @@
 <?php
-require_once("Authenticationcheck.php");
-require_once("CCourse_Credit_Information_css.php");
+require_once("../Controllers/Authenticationcheck.php");
+require_once("Course_Credit_Information_css.php");
 require_once("../Controllers/Course_Credit_Information_Valid.php");
 require_once("../Controllers/Course_Credit_Information_Valid_js.php");
 ?>

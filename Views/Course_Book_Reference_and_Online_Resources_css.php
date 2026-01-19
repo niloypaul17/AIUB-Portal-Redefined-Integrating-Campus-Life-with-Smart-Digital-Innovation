@@ -166,26 +166,30 @@ header{
     cursor: pointer;
     animation: appear-bottom 1.5s ease-out forwards;
 }
+
 #c1{
     color: white;
     border: 1px solid white;
     background-color: transparent;
     backdrop-filter: blur(8px);
     border-radius: 20px;
-    padding: 20px;
     font-size: 20px;
     position: absolute;
-    width: auto;
-    top: 20px;
-    left: 600px;
+    text-align: center;
+    width: 550px;
+    height: auto;
+    top: auto;
+    left: auto;
     animation: appear-bottom 1.5s ease-out forwards;
 }
+
 #INF1{
     color: black;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
-    padding: 10px;
+    padding: 50px 10px;
     position: absolute;
+    text-align: center;
     width: 300px;
     height: 100px;
     top: 420px;

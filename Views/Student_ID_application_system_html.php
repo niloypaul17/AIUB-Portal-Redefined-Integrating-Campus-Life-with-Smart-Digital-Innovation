@@ -1,5 +1,5 @@
 <?php
-require_once("Authenticationcheck.php");
+require_once("../Controllers/Authenticationcheck.php");
 require_once("Student_ID_application_system_css.php");
 require_once("../Controllers/Student_ID_application_system_Valid.php");
 require_once("../Controllers/Student_ID_application_system_Valid_js.php");
@@ -44,8 +44,8 @@ require_once("../Controllers/Student_ID_application_system_Valid_js.php");
             </div>
             <input type="submit" id="IB1">
             <div id="c1">
-                <p class="Valid"><?php if(isset($massage)){echo $massage;}?></p>
-                <p class="Valid"><?php if(isset($massage2)){echo $massage2;}?></p>
+                <p><?php if(isset($massage)){echo $massage;}?></p>
+                <p><?php if(isset($massage2)){echo $massage2;}?></p>
             </div>
         </form>
         <div id="INF1">

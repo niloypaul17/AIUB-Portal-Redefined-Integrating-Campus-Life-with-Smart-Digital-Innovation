@@ -11,17 +11,17 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $class=['department'=>$department, 'credit'=>$credit];
         $status=classcheck($class);
         if($status){
-            $GLOBALS['massage2']='<p style="color: green; font-size:20px">You need to complete more credit: </p>'.$R;
+            $GLOBALS['massage2']='<p style="color: white; font-size:20px">You need to complete more credit: </p>'.$R;
         }
     }
     if($credit=="" && $department==""){
-        $massage="Fill every box from php";
+        $massage="Fill All Fields";
     }
     else if($credit==""){
-        $massage="Fill credit from php";
+        $massage="Fill Credit";
     }
     else if($department==""){
-        $massage="Fill depertment from php";
+        $massage="Fill department";
     }
     else{
         if($department=="CSE"){

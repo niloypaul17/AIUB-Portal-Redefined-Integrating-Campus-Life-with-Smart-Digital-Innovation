@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $massage2="";
     
     if($fname=="" ){
-        $massage="Fill name from php";
+        $massage="Fill Name";
     }
     else{
         $_SESSION['fa']=$fname;

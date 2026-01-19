@@ -49,7 +49,7 @@ require_once("../Controllers/Indoor_Games_playing_slot_Valid_js.php");
             </div>
                 <input type="submit" id="IB1">
             <div id="c1">
-                <p class="Valid"><?php if(isset($massage)){echo $massage;}?></p>
+                <p><?php if(isset($massage)){echo $massage;}?></p>
                 <p><?php if(isset($massage2)){echo $massage2;}?></p>
             </div>
         </form>
@@ -59,7 +59,7 @@ require_once("../Controllers/Indoor_Games_playing_slot_Valid_js.php");
                 </center>
                 <br>
                 <b>Games        | Slot Timing</b> <br>
-                <b>------------------------------</b> <br>
+                <b>---------------------------------</b> <br>
                 <b>Pool         |  11:00-12:00</b> <br>
                 <b>Table Tennis |  13:00-14:00</b> <br>
                 <b>Carrom       |  16:00-16:30</b> <br>

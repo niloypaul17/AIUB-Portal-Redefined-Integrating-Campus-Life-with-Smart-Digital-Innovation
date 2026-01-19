@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $massage2="";
     
     if($course==""){
-        $massage="Fill course name from php";
+        $massage="Fill Course Name";
     }
     else{
         $course=['coursename'=>$course];
@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             $massage2='<p style="text-decoration: solid; color:blue">Book website here</p>';
         }
         else{
-            $massage2="unsuccessful";
+            $massage2="Course Name not found";
         }
     }
 }

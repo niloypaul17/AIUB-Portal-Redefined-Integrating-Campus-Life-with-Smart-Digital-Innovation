@@ -7,11 +7,11 @@
             let div=document.getElementById("c1");
 
             if(gamename=="" && time==""){
-                div.innerHTML="Fill every box from js";
+                div.innerHTML="Fill All Fields";
                 return true;
             }
             else{
-                div.innerHTML="Successfull";
+                div.innerHTML="Successfully Submitted";
                 return true;
             }
             return true;

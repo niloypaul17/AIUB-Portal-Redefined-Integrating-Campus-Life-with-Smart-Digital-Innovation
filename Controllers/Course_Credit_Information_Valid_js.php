@@ -4,38 +4,24 @@
         function checkclass(){
         let credits=document.getElementById("I1").value;
         let department=document.getElementById("I2").value;
-        let id=document.getElementById("I3").value;
         let div=document.getElementById("c1");
 
-        if(credits=="" && department=="" && id==""){
-             div.innerHTML="Fill every box from js";
+        if(credits=="" && department==""){
+             div.innerHTML="Fill All Fields";
              return true;
         }
-        else if(credits=="" && department==""){
-            div.innerHTML="Fill credit and department from js";
-            return true;
-        }
-        else if(id==""&& department==""){
-            div.innerHTML="Fill id and department from js";
-            return true;
-        }
-        else if(id==""&& credits==""){
-            div.innerHTML="Fill id and credit from js";
-            return true;
-        }
+        
         else if(credits==""){
-            div.innerHTML="Fill credit from js";
+            div.innerHTML="Fill Credit";
             return true;
         }
-        else if(id==""){
-            div.innerHTML="Fill id from js";
-            return true;
-        }
+        
         else if(department==""){
-            div.innerHTML="Fill depertment from js";
+            div.innerHTML="Fill Department";
             return true;
-        }else{
-            div.innerHTML="successful from js";
+        }
+        else{
+            div.innerHTML="Successfully Submitted";
             return true;
         }
         return true;

@@ -140,8 +140,9 @@ header{
     color: black;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
-    padding: 10px;
+    padding: 65px 30px;
     position: absolute;
+    text-align; center;
     width: auto;
     height: auto;
     top: 420px;
@@ -149,13 +150,7 @@ header{
     border: 2px solid blue;
     animation: appear-bottom 1.5s ease-out forwards;
 }
-.Valid{
-    font-size: 20px;
-    margin: 10px 10px 5px 10px;
-    height: 30px;
-    color: red;
-    margin-bottom: 30px;
-}
+
 #result{
     font-size: 20px;
     margin: 10px;
@@ -176,20 +171,23 @@ header{
     border: 1px solid blue;
     animation: appear-bottom 1.5s ease-out forwards;
 }
+
 #c1{
     color: white;
     border: 1px solid white;
     background-color: transparent;
     backdrop-filter: blur(8px);
     border-radius: 20px;
-    padding: 20px;
     font-size: 20px;
     position: absolute;
-    width: auto;
-    top: 20px;
-    left: 600px;
+    text-align: center;
+    width: 550px;
+    height: auto;
+    top: auto;
+    left: auto;
     animation: appear-bottom 1.5s ease-out forwards;
 }
+
 #I2{
     width: 330px;
     background-color: rgba(255, 255, 255, 0.4);

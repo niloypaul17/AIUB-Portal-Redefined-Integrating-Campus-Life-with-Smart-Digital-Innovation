@@ -8,19 +8,19 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $massage2="";
 
     if($department=="" && empty($time)){
-        $massage="Fill all boxs from php";
+        $massage="Fill All Fields";
     }
     else if($department=="" ){
-        $massage="Fill department name from php";
+        $massage="Fill Department Name";
     }
     else if(empty($time)){
-        $massage="Fill time from php";
+        $massage="Fill Date";
     }
     else{
         $student=['department'=>$department,'time'=>$time];
         $status=studentcheck($student);
         if($status){
-            $massage2="successfully submitted! TIME OF LOST: ".$time;
+            $massage2="Successfully Submitted! TIME OF ID LOST: ".$time;
         }
     }
 }
