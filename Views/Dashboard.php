@@ -36,7 +36,7 @@
 </head>
 <body>
     <div class="logo">
-    <img src="../Assests/AIUB_Logo.png" width="100">
+    <img src="../Assets/AIUB_Logo.png" width="100">
     <h2>Welcome to Dashboard</h2>
     </div>
     <nav>

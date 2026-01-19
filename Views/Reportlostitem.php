@@ -42,7 +42,7 @@
 </head>
 
 <body>
-    <img src="../Assests/AIUB_Logo.png" width="100">
+    <img src="../Assets/AIUB_Logo.png" width="100">
     <h3>Please fill out the form below to report info about a lost item:</h3>
     <form action="../Controllers/Reportlostitemcheck.php" method="post" onsubmit="return validateForm()">
         <div class="box">

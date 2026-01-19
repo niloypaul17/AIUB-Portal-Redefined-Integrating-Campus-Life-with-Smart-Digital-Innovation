@@ -41,7 +41,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<img src="../Assests/AIUB_Logo.png" width="100">
+<img src="../Assets/AIUB_Logo.png" width="100">
 <h3>Student Tutor Application Form</h3>
 <form action="../Controllers/STapplyformcheck.php" method="post" onsubmit="return validateForm()">
 <div class="box">

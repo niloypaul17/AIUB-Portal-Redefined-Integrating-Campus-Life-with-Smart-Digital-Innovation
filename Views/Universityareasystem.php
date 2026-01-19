@@ -35,13 +35,13 @@
 
 <body>
 
-<img src="../Assests/AIUB_Logo.png" width="100" class="logo">
+<img src="../Assets/AIUB_Logo.png" width="100" class="logo">
 <h3>University Campus Map</h3>
 
 <div class="box">
     <p><b>AIUB Campus Map</b></p>
     <br>
-    <img src="../Assests/AIUB_Map.PNG" class="map" alt="AIUB Campus Map">
+    <img src="../Assets/AIUB_Map.PNG" class="map" alt="AIUB Campus Map">
 </div>
 
 <a href="Dashboard.php">Back</a>

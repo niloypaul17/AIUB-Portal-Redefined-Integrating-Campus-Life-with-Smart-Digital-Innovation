@@ -40,7 +40,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body> 
-<img src="../Assests/AIUB_Logo.png" width="100">
+<img src="../Assets/AIUB_Logo.png" width="100">
 <h3>Search for a Lost Item</h3>
 <form action="../Controllers/Searchlostitemcheck.php" method="post" onsubmit="return validateSearch()">
 <div class="box">

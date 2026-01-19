@@ -42,7 +42,7 @@
     </style>
 </head>
 <body>
-<img src="../Assests/AIUB_Logo.png" width="100">
+<img src="../Assets/AIUB_Logo.png" width="100">
 <h1>Welcome to Club Application Form</h1>
 <h3>Please fill up the form below to apply for club membership</h3>
 

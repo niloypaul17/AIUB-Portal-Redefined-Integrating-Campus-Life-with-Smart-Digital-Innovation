@@ -16,11 +16,11 @@ require_once("../Controllers/Faculty_Information_Valid_js.php");
     </head>
     <body>
         <header>
-            <img src="../Assests/AIUB Logo.png" alt="AIUB Logo" id="logo">
-            <img src="../Assests/aiub_200X70.png" alt="Portal" id="Portal">
+            <img src="../Assets/AIUB Logo.png" alt="AIUB Logo" id="logo">
+            <img src="../Assets/aiub_200X70.png" alt="Portal" id="Portal">
             <button id="B1" onclick="window.location.href='Dashboard.php'">Dashboard</button>
         </header>
-        <img src="../Assests/image.jpg" alt="Background" id="BackImg">
+        <img src="../Assets/image.jpg" alt="Background" id="BackImg">
         <h1 id="Title1">WELCOME TO FACULTY INFORMATION PAGE</h1>
         <form method="post" id="FF1">
             <div id="F1">

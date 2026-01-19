@@ -40,7 +40,7 @@
 
 <body>
 
-<img src="../Assests/AIUB_Logo.png" width="100">
+<img src="../Assets/AIUB_Logo.png" width="100">
 <h3>Student File Sharing System</h3>
 
 <form method="post" action="Universityfilesharingsystemcheck.php">

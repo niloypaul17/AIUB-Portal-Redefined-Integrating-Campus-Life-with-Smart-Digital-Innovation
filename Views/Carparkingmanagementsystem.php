@@ -42,7 +42,7 @@
 </head>
 
 <body>
-<img src="../Assests/AIUB_Logo.png" width="100">
+<img src="../Assets/AIUB_Logo.png" width="100">
 <h3>Car / Bike Parking Registration</h3>
 
 <form method="POST" action="Carparkingmanagementsystemcheck.php">

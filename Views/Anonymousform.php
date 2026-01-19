@@ -45,7 +45,7 @@
 </head>
 
 <body>
-    <img src="../Assests/AIUB_Logo.png" width="100">
+    <img src="../Assets/AIUB_Logo.png" width="100">
     <h1>Welcome to Anonymous Complaint Form</h1>
     <p>If you have any <b>Advice</b> or <b>Complaint</b></p>
     <p>Please fill up the form below</p>

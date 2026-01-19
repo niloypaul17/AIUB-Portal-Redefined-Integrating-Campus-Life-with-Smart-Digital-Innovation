@@ -47,7 +47,7 @@
     </style>
 </head>
 <body>
-<img src="../Assests/AIUB_Logo.png" width="100">
+<img src="../Assets/AIUB_Logo.png" width="100">
 <h1>Welcome to University Clubs Page</h1>
 <h3>Please Click A Card To See Detailed Information About The Club</h3>
 

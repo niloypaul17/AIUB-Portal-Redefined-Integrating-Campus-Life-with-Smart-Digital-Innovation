@@ -19,11 +19,11 @@ require_once("../Controllers/Course_Book_Reference_and_Online_Resources_Valid_js
     </head>
     <body>
         <header>
-            <img src="../Assests/AIUB_Logo.png" alt="AIUB Logo" id="logo">
-            <img src="../Assests/aiub_200X70.png" alt="Portal" id="Portal">
+            <img src="../Assets/AIUB_Logo.png" alt="AIUB Logo" id="logo">
+            <img src="../Assets/aiub_200X70.png" alt="Portal" id="Portal">
             <button id="B1" onclick="window.location.href='Dashboard.php'">Dashboard</button>
         </header>
-        <img src="../Assests/new_campus_pic_7.jpg" alt="Background" id="BackImg">
+        <img src="../Assets/new_campus_pic_7.jpg" alt="Background" id="BackImg">
         <h1 id="Title1">WELCOME TO</h1>
         <h1 id="Title2">Course Book Reference and Online Resources</h1>
         <form method="post" id="f1" onsubmit="return checkbook()">

@@ -30,7 +30,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <img src="../Assests/AIUB_Logo.png" width="100">
+    <img src="../Assets/AIUB_Logo.png" width="100">
     <h1>Welcome to Lost and Found</h1>
     <h3>Please select what you would like to do:</h3>
     <form>

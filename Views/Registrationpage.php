@@ -26,7 +26,7 @@
 </head>
 <body>
     <div class="box">
-    <img src="../Assests/AIUB_Logo.png" width="100">
+    <img src="../Assets/AIUB_Logo.png" width="100">
     <br>
     <h2>American International University-Bangladesh</h2>
     <h5>Sign Up With Your Student ID and Password</h5>
