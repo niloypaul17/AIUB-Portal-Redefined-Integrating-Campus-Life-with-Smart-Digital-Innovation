@@ -42,23 +42,23 @@
     <nav>
         <a href="Lost and Found.php">Lost and Found</a>
         <a href="Anonymousform.php">Complaint Form</a>
-        <a href="STapplyform.php">ST Apply</a>
+        <a href="STapplyform.php">Student Tutor Apply</a>
         <a href="Clubinformation.php">Clubs</a>
         <a href="#">Swimming Pool</a>
         <a href="#">Canteen</a>
-        <a href="#">Lab slot</a>
-        <a href="#">Parking</a>
+        <a href="#">Lab Slot</a>
+        <a href="#">Vehicle Parking</a>
         <a href="#">Alumni Information</a>
         <a href="#">Gymnasium</a>
-        <a href="#">Printing</a>
-        <a href="#">File sharing</a> 
+        <a href="#">Print Document</a>
+        <a href="#">File Share</a> 
         <a href="#">Events</a> 
-        <a href="#">Map</a> 
-        <a href="Faculty_Information_html.php">Faculty</a>
-        <a href="Class_Routine_and_Upcoming_Registration_Course_Generator_html.php">Class Routine</a>
-        <a href="Course_Book_Reference_and_Online_Resources_html.php">Book Reference</a>
-        <a href="Indoor_Games_playing_slot_html.php">Indoor Games</a>
-        <a href="Student_ID_reacquire_application_system_html.php">Student ID Reacqrire</a>      
+        <a href="#">AIUB Map</a> 
+        <a href="Faculty_Information_html.php"><b>Faculty Information</b></a>
+        <a href="Course_Credit_Information_html.php"><b>Course Credit Information</b></a>
+        <a href="Course_Book_Reference_and_Online_Resources_html.php"><b>Book Reference</b></a>
+        <a href="Indoor_Games_playing_slot_html.php"><b>Indoor Games</b></a>
+        <a href="Student_ID_application_system_html.php"><b>Student ID Application System</b></a>      
     </nav>
 
     <h2><b>Introdcution: </b></h2>

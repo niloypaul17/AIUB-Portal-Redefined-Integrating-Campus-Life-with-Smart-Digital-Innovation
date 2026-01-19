@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 //require_once('../Controllers/Authenticationcheck.php');
 require_once('Database.php');
-sleep(5);
+sleep(3);
 function dataa($name){
 $con = getConnection();
 $data = strtoupper($name);
