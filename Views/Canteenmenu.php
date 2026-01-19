@@ -160,6 +160,8 @@
     </p>
     <p>© 2025 AIUB University Canteen | All Rights Reserved</p>
 <a href="#top">Back to Top</a>
+<br><br>
+<a href="Dashboard.php">Back</a>
 </footer>
 </body>
 </html>

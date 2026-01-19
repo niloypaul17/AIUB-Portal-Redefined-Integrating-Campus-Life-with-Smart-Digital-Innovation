@@ -30,7 +30,7 @@
         }
         .success {
             color: green;
-        }
+        }      
     </style>
 </head>
 
@@ -104,6 +104,8 @@
         <input type="text" name="sname"><br><br>
 
         <input type="submit" name="applyInternship" value="Apply">
+        <br><br>
+        <a href="Dashboard.php">Back</a>
     </form>
 </div>
 
