@@ -40,20 +40,20 @@
     <h2>Welcome to Dashboard</h2>
     </div>
     <nav>
-        <a href="Lost and Found.php">Lost and Found</a>
-        <a href="Anonymousform.php">Complaint Form</a>
-        <a href="STapplyform.php">Student Tutor Apply</a>
-        <a href="Clubinformation.php">Clubs</a>
-        <a href="Swimmingpoolregistration.php">Swimming Pool</a>
-        <a href="Canteenmenu.php">Canteen</a>
-        <a href="Labslotbooking.php">Lab Slot</a>
-        <a href="Carparkingmanagementsystem.php">Vehicle Parking</a>
-        <a href="Alumniinformationandinternshipfinder.php">Alumni Information</a>
-        <a href="Gymnasiumregistrationform.php">Gymnasium</a>
-        <a href="Documentprintingsytem.php">Print Document</a>
-        <a href="Universityfilesharingsystem.php">File Share</a> 
-        <a href="Eventandnoticedisplay.php">Events</a> 
-        <a href="Universityareasystem.php">AIUB Map</a> 
+        <a href="Lost and Found.php"><b>Lost and Found</b></a>
+        <a href="Anonymousform.php"><b>Complaint Form</b></a>
+        <a href="STapplyform.php"><b>Student Tutor Apply</b></a>
+        <a href="Clubinformation.php"><b>Clubs</b></a>
+        <a href="Swimmingpoolregistration.php"><b>Swimming Pool</b></a>
+        <a href="Canteenmenu.php"><b>Canteen</b></a>
+        <a href="Labslotbooking.php"><b>Lab Slot</b></a>
+        <a href="Carparkingmanagementsystem.php"><b>Vehicle Parking</b></a>
+        <a href="Alumniinformationandinternshipfinder.php"><b>Alumni Information</b></a>
+        <a href="Gymnasiumregistrationform.php"><b>Gymnasium</b></a>
+        <a href="Documentprintingsytem.php"><b>Print Document</b></a>
+        <a href="Universityfilesharingsystem.php"><b>File Share</b></a> 
+        <a href="Eventandnoticedisplay.php"><b>Events</b></a> 
+        <a href="Universityareasystem.php"><b>AIUB Map</b></a> 
         <a href="Faculty_Information_html.php"><b>Faculty Information</b></a>
         <a href="Course_Credit_Information_html.php"><b>Course Credit Information</b></a>
         <a href="Course_Book_Reference_and_Online_Resources_html.php"><b>Book Reference</b></a>
