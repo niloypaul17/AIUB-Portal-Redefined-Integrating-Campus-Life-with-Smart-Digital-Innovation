@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 19, 2026 at 11:42 AM
+-- Generation Time: Jan 20, 2026 at 12:46 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -92,21 +92,48 @@ INSERT INTO `course_book` (`coursename`) VALUES
 --
 
 CREATE TABLE `course_credit_information` (
-  `ID` varchar(100) NOT NULL,
-  `department` varchar(100) NOT NULL,
-  `credit` int(100) DEFAULT NULL
+  `id` int(11) NOT NULL,
+  `studentid` varchar(20) NOT NULL,
+  `department` varchar(10) NOT NULL,
+  `completed_credits` int(11) DEFAULT 0,
+  `completed_courses` text DEFAULT NULL,
+  `remaining_credits` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `course_credit_information`
 --
 
-INSERT INTO `course_credit_information` (`ID`, `department`, `credit`) VALUES
-('', 'CSE', 12),
-('11111111', 'CSE', 25),
-('23-51212-2', 'CSE', 12),
-('23-52121-2', 'CSE', 12),
-('2321', 'CSE', 123);
+INSERT INTO `course_credit_information` (`id`, `studentid`, `department`, `completed_credits`, `completed_courses`, `remaining_credits`) VALUES
+(1, '22-46872-1', 'CSE', 9, 'CSC1205, CSC2108, CSC2211', 139);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `course_info`
+--
+
+CREATE TABLE `course_info` (
+  `id` int(11) NOT NULL,
+  `studentid` varchar(50) NOT NULL,
+  `department` varchar(10) NOT NULL,
+  `course_code` varchar(20) NOT NULL,
+  `course_name` varchar(100) NOT NULL,
+  `credit` int(5) NOT NULL,
+  `status` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `course_info`
+--
+
+INSERT INTO `course_info` (`id`, `studentid`, `department`, `course_code`, `course_name`, `credit`, `status`) VALUES
+(1, '22-46872-1', 'CSE', 'CSC1102', 'Intro to Programming', 3, 'Remaining'),
+(2, '22-46872-1', 'CSE', 'CSC1205', 'OOP 1', 3, 'Remaining'),
+(3, '22-46872-1', 'CSE', 'CSC2108', 'Data Structures', 3, 'Remaining'),
+(4, '22-46872-1', 'CSE', 'MAT1102', 'Calculus', 3, 'Remaining'),
+(5, '22-46872-1', 'CSE', 'CSC3113', 'Web Technologies', 3, 'Completed'),
+(6, '22-46872-1', 'CSE', 'ENG1101', 'English 1', 3, 'Remaining');
 
 -- --------------------------------------------------------
 
@@ -138,20 +165,28 @@ INSERT INTO `faculty_information` (`facultyID`, `facultyname`, `position`, `Emai
 --
 
 CREATE TABLE `game_slot` (
-  `time` varchar(100) NOT NULL,
   `slotID` int(100) NOT NULL,
-  `gamename` varchar(100) NOT NULL
+  `gamename` varchar(100) NOT NULL,
+  `time` varchar(100) NOT NULL,
+  `studentid` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `game_slot`
 --
 
-INSERT INTO `game_slot` (`time`, `slotID`, `gamename`) VALUES
-('13:00-14:00', 3, 'Table Tennis'),
-('13:00-14:00', 4, 'Pool'),
-('11:00-12:00', 5, 'Pool'),
-('13:00-14:00', 6, 'Pool');
+INSERT INTO `game_slot` (`slotID`, `gamename`, `time`, `studentid`) VALUES
+(1, 'Pool Board', '11:00-12:00', '22468721'),
+(2, 'Table Tennis', '12:00-13:00', '22468721'),
+(3, 'Chess', '13:00-14:00', '22468921'),
+(4, 'Carrom Board', '14:00-15:00', '22473021'),
+(5, 'PlayStation 5', '15:00-16:00', '23517732'),
+(6, 'Table Tennis', '11:00-12:00', '11111111'),
+(7, 'Carrom Board', '11:00-12:00', '22222222'),
+(8, 'PlayStation 5', '13:00-14:00', '22222222'),
+(9, 'Ludo', '11:00-12:00', '22222222'),
+(10, 'Table Tennis', '14:00-15:00', '22222222'),
+(11, 'Carrom Board', '12:00-13:00', '11111111');
 
 -- --------------------------------------------------------
 
@@ -225,7 +260,43 @@ INSERT INTO `student_id_application` (`applicationID`, `department`, `time`) VAL
 (6, 'EEE', '2026-01-15'),
 (7, 'EEE', '2026-01-15'),
 (8, 'EEE', '2026-01-15'),
-(9, 'EEE', '2026-01-15');
+(9, 'EEE', '2026-01-15'),
+(10, 'CSE', '2026-01-31'),
+(11, 'CSE', '2026-01-20'),
+(12, 'CSE', '2026-01-22'),
+(13, 'CSE', '2026-01-13'),
+(14, 'CSE', '2026-01-13'),
+(15, 'CSE', '2025-12-30'),
+(16, 'CSE', '2025-12-30'),
+(17, 'CSE', '2025-12-30'),
+(18, 'CSE', '2025-12-30'),
+(19, 'CSE', '2025-12-30'),
+(20, 'CSE', '2026-01-08'),
+(21, 'CSE', '2026-01-12'),
+(22, 'CSE', '2026-01-12'),
+(23, 'CSE', '2026-01-12'),
+(24, 'CSE', '2026-01-12'),
+(25, 'CSE', '2026-01-12'),
+(26, 'CSE', '2026-01-12'),
+(27, 'CSE', '2026-01-12'),
+(28, 'EEE', '2026-01-07'),
+(29, 'EEE', '2026-01-07'),
+(30, 'EEE', '2026-01-06'),
+(31, 'EEE', '2026-01-06'),
+(32, 'EEE', '2026-01-06'),
+(33, 'CSE', '2026-01-21'),
+(34, 'CSE', '2026-01-21'),
+(35, 'CSE', '2026-01-21'),
+(36, 'CSE', '2026-01-21'),
+(37, 'CSE', '2026-01-21'),
+(38, 'EEE', '2026-01-11'),
+(39, 'EEE', '2026-01-11'),
+(40, 'EEE', '2026-01-11'),
+(41, 'CSE', '2026-01-21'),
+(42, 'CSE', '2026-01-21'),
+(43, 'CSE', '2025-12-30'),
+(44, 'EEE', '2026-01-08'),
+(45, 'EEE', '2026-01-13');
 
 -- --------------------------------------------------------
 
@@ -264,7 +335,13 @@ ALTER TABLE `course_book`
 -- Indexes for table `course_credit_information`
 --
 ALTER TABLE `course_credit_information`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `course_info`
+--
+ALTER TABLE `course_info`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `faculty_information`
@@ -289,6 +366,18 @@ ALTER TABLE `student_id_application`
 --
 
 --
+-- AUTO_INCREMENT for table `course_credit_information`
+--
+ALTER TABLE `course_credit_information`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `course_info`
+--
+ALTER TABLE `course_info`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `faculty_information`
 --
 ALTER TABLE `faculty_information`
@@ -298,13 +387,13 @@ ALTER TABLE `faculty_information`
 -- AUTO_INCREMENT for table `game_slot`
 --
 ALTER TABLE `game_slot`
-  MODIFY `slotID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `slotID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `student_id_application`
 --
 ALTER TABLE `student_id_application`
-  MODIFY `applicationID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `applicationID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
