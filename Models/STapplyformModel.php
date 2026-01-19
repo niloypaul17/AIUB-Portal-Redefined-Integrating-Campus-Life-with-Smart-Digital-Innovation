@@ -1,5 +1,4 @@
 <?php
-//STapplyformModel Page
 require_once('Database.php');
 
 function STapply($STapplication){

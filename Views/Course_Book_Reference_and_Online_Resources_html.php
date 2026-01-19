@@ -1,10 +1,9 @@
 <?php
-require_once("Authenticationcheck.php");
+require_once("../Controllers/Authenticationcheck.php");
 require_once("Course_Book_Reference_and_Online_Resources_css.php");
 require_once("../Controllers/Course_Book_Reference_and_Online_Resources_Valid.php");
 require_once("../Controllers/Course_Book_Reference_and_Online_Resources_Valid_js.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -33,11 +32,20 @@ require_once("../Controllers/Course_Book_Reference_and_Online_Resources_Valid_js
                 <input type="text" name="course" id="I1">
             </div>
             <input type="submit" id="IB1">
-            <center>
+            <div id="c1">
                 <p class="Valid"><?php if(isset($massage)){echo $massage;}?></p>
-                <div class="Valid" id="c1"></div>
                 <p><?php if(isset($massage2)){echo $massage2;}else{ echo 'Book not found';}?></p>
-            </center>
+            </div>
+            
         </form>
+        <div id="INF1">
+                <center>
+                    <b>COURSE NAMES</b>
+                </center>
+                <br>
+                <b>Human Computer Interaction</b> <br>
+                <b>Data Science</b> <br>
+                <b>Web Technology</b> <br>
+            </div>
     </body>
 </html>

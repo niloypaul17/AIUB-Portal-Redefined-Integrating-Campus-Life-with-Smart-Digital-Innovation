@@ -17,7 +17,7 @@
             else if(!time.value){
                 div.innerHTML="Fill time from js";
                 return true;
-            
+            }
             else{
                 div.innerHTML="Successful from js";
                 return true;

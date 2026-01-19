@@ -1,10 +1,9 @@
 <?php
-require_once("Authenticationcheck.php");
+require_once("../Controllers/Authenticationcheck.php");
 require_once("Indoor_Games_playing_slot_css.php");
 require_once("../Controllers/Indoor_Games_playing_slot_Valid.php");
 require_once("../Controllers/Indoor_Games_playing_slot_Valid_js.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -49,12 +48,22 @@ require_once("../Controllers/Indoor_Games_playing_slot_Valid_js.php");
                 </select>
             </div>
                 <input type="submit" id="IB1">
-            <center>
+            <div id="c1">
                 <p class="Valid"><?php if(isset($massage)){echo $massage;}?></p>
-                <div class="Valid" id="c1"></div>
-            </center>
-            
-            <center><p id="result"><?php if(isset($massage2)){echo $massage2;}?></p></center>
+                <p><?php if(isset($massage2)){echo $massage2;}?></p>
+            </div>
         </form>
+        <div id="INF1">
+                <center>
+                    <b>GAMES DETAILS</b>
+                </center>
+                <br>
+                <b>Games        | Slot Timing</b> <br>
+                <b>------------------------------</b> <br>
+                <b>Pool         |  11:00-12:00</b> <br>
+                <b>Table Tennis |  13:00-14:00</b> <br>
+                <b>Carrom       |  16:00-16:30</b> <br>
+                <b>Chess        |  17:00-18:00</b>
+            </div>
     </body>
 </html>

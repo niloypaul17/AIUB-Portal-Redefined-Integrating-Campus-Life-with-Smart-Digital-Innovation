@@ -3,10 +3,9 @@
 <style>
 header{
     position: relative;
-    width: 1518px;
+    width: 100%;
     height: 100px;
-    background-color: transparent;
-    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0.9);
     border: 2px solid blue;
     color: white;
     border-radius: 20px;
@@ -22,8 +21,8 @@ header{
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 1536px;
-    height: 728px;
+    width: 100%;
+    height: 100%;
     z-index: -1;
 }
 #Title1{
@@ -31,7 +30,7 @@ header{
     top: 140px;
     color: white;
     font-size: 75px;
-    left: 550px;
+    left: 650px;
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
@@ -44,7 +43,7 @@ header{
     top: 290px;
     color: white;
     font-size: 48px;
-    left: 450px;
+    left: 550px;
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
@@ -132,10 +131,23 @@ header{
 #f1{
     position: absolute;
     top: 400px;
-    left: 0;
+    left: 600px;
     padding: 10px;
     width: auto;
     height: auto;
+}
+#INF1{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 420px;
+    left: 300px;
+    border: 2px solid blue;
+    animation: appear-bottom 1.5s ease-out forwards;
 }
 .Valid{
     font-size: 20px;
@@ -154,7 +166,7 @@ header{
 .div{
     font-size: 20px;
     margin: 10px;
-    width: 1440px;
+    width: 500px;
     height: 30px;
     background-color: transparent;
     backdrop-filter: blur(24px);
@@ -164,14 +176,28 @@ header{
     border: 1px solid blue;
     animation: appear-bottom 1.5s ease-out forwards;
 }
+#c1{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+    position: absolute;
+    width: auto;
+    top: 20px;
+    left: 600px;
+    animation: appear-bottom 1.5s ease-out forwards;
+}
 #I2{
-    width: 1250px;
+    width: 330px;
     background-color: rgba(255, 255, 255, 0.4);
     border: 1px solid white;
     border-radius: 10px;
 }
 #I3{
-    width: 1270px;
+    width: 330px;
     background-color: rgba(255, 255, 255, 0.4);
     border: 1px solid white;
     border-radius: 10px;
@@ -180,7 +206,7 @@ header{
     margin: 10px;
     height: 30px;
     color: blue;
-    width: 1480px;
+    width: 540px;
     background-color: rgba(255, 255, 255, 1.0);
     border: 1px solid blue;
     border-radius: 10px;

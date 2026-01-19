@@ -3,10 +3,9 @@
 <style>
 header{
     position: relative;
-    width: 1518px;
+    width: 100%;
     height: 100px;
-    background-color: transparent;
-    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.9);
     border: 2px solid blue;
     color: white;
     border-radius: 20px;
@@ -22,8 +21,8 @@ header{
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 1536px;
-    height: 728px;
+    width: 100%;
+    height: 100%;
     z-index: -1;
 }
 #Title1{
@@ -31,7 +30,7 @@ header{
     top: 180px;
     color: white;
     font-size: 75px;
-    left: 50px;
+    left: 150px;
     overflow: hidden;
     white-space: nowrap;
     border-right: .15em solid orange;
@@ -62,7 +61,7 @@ header{
 #F1{
     position: absolute;
     top: 350px;
-    left: 500px;
+    left: 650px;
     color: white;
     border: 1px solid white;
     background-color: transparent;
@@ -115,7 +114,19 @@ header{
     position: absolute;
     width: auto;
     top: 350px;
-    left: 1030px;
+    left: 1180px;
+}
+#INF1{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    width: 300px;
+    height: 230px;
+    top: 350px;
+    left: 250px;
+    overflow: scroll;
 }
 #sub{
     width: 450px;

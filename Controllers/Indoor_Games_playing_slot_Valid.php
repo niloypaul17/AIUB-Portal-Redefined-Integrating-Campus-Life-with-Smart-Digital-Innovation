@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $game=['gamename'=>$gamename,'time'=>$time];
         $status=gamecheck($game);
         if($status){
-            $massage2="successfully registered! GAMENAME: ".$gamename." TIME: ".$time;
+            $massage2="Successfully registered! GAME NAME: ".$gamename." TIME: ".$time;
         }
     }
 }

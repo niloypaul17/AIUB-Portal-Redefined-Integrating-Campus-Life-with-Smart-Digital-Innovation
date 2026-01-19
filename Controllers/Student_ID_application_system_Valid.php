@@ -1,6 +1,5 @@
 <?php
-require_once("Authenticationcheck.php");
-require_once("../Models/Student_ID_reacquire_application_system_check.php");
+require_once("../Models/Student_ID_application_system_check.php");
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 
